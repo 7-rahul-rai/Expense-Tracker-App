@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-custom">
-        <a class="navbar-brand" href="#"><img src="images/save-money.png" style="width: 48px;" alt="exLogo"></a>
+        <a class="navbar-brand" href="index.html"><img src="images/save-money.png" style="width: 48px;" alt="exLogo"></a>
         <span style=" color:#007bff;"><h1 style="font-size:xx-large;">Daily Expenses</h1></span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -25,17 +25,19 @@
                 <li class="nav-item">
                     <a class="nav-link" href="expense.html">Add Expense</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/balance">check bal</a>
-                </li>
             </ul>
         </div>
     </nav>
-
+   
       
    
     <div class="container mt-5">
-      <div class="col-12 text-right" id="balance" style="color: rgb(39, 170, 7);"></div>
+
+       <div class="row">
+            <div class="col-6" style="color: #f17b0cde; font-size: large;"><h5 id="date"></h5></div>
+            <div class="col-6 text-right" id="balance" style="color: rgb(39, 170, 7);"></div>
+        </div>
+
         <h2>Income(Credit)</h2>
         <h4>Total Income : <span id="headIncome"></span></h4>
         <table class="table">

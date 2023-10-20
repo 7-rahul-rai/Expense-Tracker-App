@@ -3,6 +3,7 @@ const expense = document.getElementById('expenseTableBody')
 const tincome = document.getElementById('headIncome')
 const texpense = document.getElementById('headExpense')
 var balance = document.getElementById('balance')
+const date = document.getElementById('date')
 
 async function fetchincome(){
   try{
@@ -78,6 +79,11 @@ async function getbal(){
    try{
      const sumincome = await axios.get('/sum1')
      const sumXpense = await axios.get('/sum')
+     const today = new Date();
+  const year = today.getFullYear();
+  const month = today.getMonth() ;
+  const day = today.getDate();
+  const formattedDate = `Date : ${day}-${month}-${year}`;
      console.log(sumincome);  
      console.log(sumXpense);
      let totalbal = parseInt(sumincome.data-sumXpense.data)
@@ -89,6 +95,8 @@ async function getbal(){
      balance.innerHTML=`<h5><span style="color: rgb(39, 170, 7);">Balance : ${totalbal}</span>
      </h5>`
      }
+     date.textContent = formattedDate
+
    }
    catch(err){
     console.log(err);
