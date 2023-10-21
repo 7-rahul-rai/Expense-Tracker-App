@@ -33,9 +33,7 @@
 <h2>Demo Video</h2>
 
 <p>
-    <a href="public/video/demo.mp4">
-        <img src="" alt="Demo Video" style="width:320px;height:240px;">
-    </a>
+    <video src="https://drive.google.com/file/d/18B2h-tklvnFh7H5rQEIIpVniqD_9lwpK/view?usp=share_link">Watch Demo</video>
 </p>
 
 <p>The above video demonstrates the functionalities and usage of the application. Please click the thumbnail to view the full video.</p>
