@@ -33,10 +33,10 @@
 <h2>Demo Video</h2>
 
 <p>
-    <video src="https://drive.google.com/file/d/18B2h-tklvnFh7H5rQEIIpVniqD_9lwpK/view?usp=share_link">Watch Demo</video>
+    <a href="https://drive.google.com/file/d/18B2h-tklvnFh7H5rQEIIpVniqD_9lwpK/view?usp=share_link">Watch Demo</a>
 </p>
 
-<p>The above video demonstrates the functionalities and usage of the application. Please click the thumbnail to view the full video.</p>
+<p>The above video demonstrates the functionalities and usage of the application.</p>
 
 <h2>Usage</h2>
 
