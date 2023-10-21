@@ -1,4 +1,6 @@
 document.getElementById('eform').addEventListener("submit",addele)
+const prime = document.getElementById('prime')
+
 
 async function addele(event){
     event.preventDefault();
@@ -17,6 +19,17 @@ async function addele(event){
 
     document.getElementById('eform').reset()
 }
+
+prime.addEventListener('click',async()=>{
+    try{
+     const response = await axios.post('/prime')
+     console.log(response.data);
+     window.location.href = `https://rzp.io/i/L3mBE8M58t`;
+    }
+    catch(err){
+      console.log(err);
+    }
+ })
 
   
 

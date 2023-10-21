@@ -4,6 +4,7 @@ const tincome = document.getElementById('headIncome')
 const texpense = document.getElementById('headExpense')
 var balance = document.getElementById('balance')
 const date = document.getElementById('date')
+const prime = document.getElementById('prime')
 
 async function fetchincome(){
   try{
@@ -106,4 +107,15 @@ async function getbal(){
 fetchincome()
 fetchexpense()
 getbal()
+
+prime.addEventListener('click',async()=>{
+   try{
+    const response = await axios.post('/prime')
+    console.log(response.data);
+    window.location.href = `https://rzp.io/i/L3mBE8M58t`;
+   }
+   catch(err){
+     console.log(err);
+   }
+})
 
